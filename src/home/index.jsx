@@ -24,7 +24,7 @@ const home = ({ navigation }) => {
 
                 <NameInput onChangeText={nome => setNome(nome)} placeholder="Digite seu nome" />
 
-                <BtnStart disabled={nome === ''}  onPress={goToPage}>
+                <BtnStart style={ nome === '' ? {opacity: '0.4'} : {opacity: 1}} disabled={nome === ''}  onPress={goToPage}>
                     <BtnText>Vamos lá!</BtnText>
                 </BtnStart>
             </FormArea>
